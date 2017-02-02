@@ -12,7 +12,8 @@ package com.practice.algos;
 public class Qsort {
 
     public static void main(String args[]) {
-        int ar[] = {13,19,9,5,12,8,7,4,11,2,6,21};
+        //int ar[] = {13,19,9,5,12,8,7,4,11,2,6,21};
+        int ar[] = {1,2,3,4,5,6,7,8,9,10};
         hoareSort(ar, 0, ar.length - 1);
        //int ar[]={8, 1, 3, 2, 5, 7, 6, 4};
 
@@ -36,7 +37,7 @@ public class Qsort {
         }
     }
 
-    static int lomutoPartition(int ar[], int lo, int hi) {
+    static int partition(int ar[], int lo, int hi) {
         int p = ar[lo];
         int i = lo - 1;
         int j = hi + 1;
